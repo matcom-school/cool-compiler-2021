@@ -1,0 +1,1 @@
+from cool_compiler.table_regex import Token as Token

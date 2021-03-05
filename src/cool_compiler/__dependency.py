@@ -1,1 +1,1 @@
-from .ast_factory import AstFactory as Factory
+from .semantic import Factory
