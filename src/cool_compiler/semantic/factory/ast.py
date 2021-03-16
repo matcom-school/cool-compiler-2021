@@ -1,13 +1,12 @@
 class Node:
-    def get_ubis_to_erros(self,*args,**kwords):
-        self.errors_ubis = args
-        self.get_ubi_to = kwords
+    pass
 
 ####################################################
 class Program (Node):
-    def __init__(self, class_list):
+    def __init__(self, build_in_type, class_list, class_info ) -> None:
+        self.bit = build_in_type
         self.class_list = class_list
-
+        self.class_info = class_info
 
 class Class (Node):
     def __init__(self, name, inherits_type, feature_list):
@@ -156,3 +155,4 @@ class Bool (Atomic):
 class Identifier (Expression):
     def __init__(self, lex):
         self.id = lex
+

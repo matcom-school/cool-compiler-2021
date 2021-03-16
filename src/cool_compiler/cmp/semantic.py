@@ -177,7 +177,7 @@ class IntType(Type):
 class Context:
     def __init__(self, types = {}):
         self.types = types
-        self.current_type = None
+        self.current_type : Type = None
         self.built_in_type = None
         self.car = [chr(185),chr(186)]
 
